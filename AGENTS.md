@@ -1,3 +1,4 @@
+永远使用中文书写文档,永远使用中文和用户对话.
 <!-- OPENSPEC:START -->
 # OpenSpec Instructions
 
