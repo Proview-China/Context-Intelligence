@@ -1,34 +1,27 @@
-# 通用忽略
-/.DS_Store
-Thumbs.db
-*.log
-
 # Rust
-/target/
-**/*.summaries.*
-**/*.summary.*.md
-Cargo.lock
+target/
 
 # Python
-/.venv/
-/venv/
 __pycache__/
-*.pyc
 .pytest_cache/
 .mypy_cache/
+.venv/
+venv/
+*.pyc
 
-# 环境与密钥
-.env
-.env.*
-*.secret
-*.pem
-*.key
-*.crt
-
-# 编辑器/工具
-.vscode/
+# Editors/OS
+.DS_Store
 .idea/
-.openspec-cache/
+.vscode/
 
-# 忽略嵌套 Git 仓库目录内容（作为子目录追踪，不纳入上层 Git）
-/PreTackler/
+# Logs & coverage
+*.log
+.coverage
+coverage/
+
+# Project-specific secrets & outputs
+deepseek_api_key.secret
+PreTackler/**/deepseek_api_key.secret
+*.summaries.*/
+PreTackler/**/.summaries.*/
+
